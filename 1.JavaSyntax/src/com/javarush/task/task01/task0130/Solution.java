@@ -10,8 +10,8 @@ public class Solution {
     }
 
     public static double convertCelsiumToFahrenheit(int celsium) {
-        //напишите тут ваш код
+        double fahrenhait = celsium * 9 / 5.0 + 32;//напишите тут ваш код
 
-        return 0;
+        return fahrenhait;
     }
 }
