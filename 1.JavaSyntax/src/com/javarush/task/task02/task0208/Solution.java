@@ -5,7 +5,8 @@ package com.javarush.task.task02.task0208;
 */
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Cat pepka = new Cat();
+        Cat tapka = new Cat();//напишите тут ваш код
     }
 
     public static class Cat {
