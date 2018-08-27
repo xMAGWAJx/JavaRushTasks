@@ -5,7 +5,8 @@ package com.javarush.task.task02.task0214;
 */
 public class Solution {
     public static int min(int a, int b) {
-        //напишите тут ваш код
+      int m = a < b ? a : b;
+      return m;
     }
 
     public static void main(String[] args) throws Exception {
