@@ -6,7 +6,9 @@ package com.javarush.task.task01.task0127;
 
 public class Solution {
     public static void main(String[] args) {
-      System.out.println(sqr(5));//напишите тут ваш код
+      System.out.println(sqr(5));
+
+      //done
     }
 
     public static int sqr(int a) {
