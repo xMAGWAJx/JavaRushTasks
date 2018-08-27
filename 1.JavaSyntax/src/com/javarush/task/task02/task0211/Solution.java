@@ -14,12 +14,12 @@ public class Solution {
         y = y + x;
 
         x = x * 2;
-        y = y + x;
+     //   y = y + x;
 
         x = x * 2;
         y = y + x;
 
-        x = x * 2;
+      //  x = x * 2;
         y = y + x;
 
         System.out.println(y);
