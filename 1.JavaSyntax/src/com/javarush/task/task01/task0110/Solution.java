@@ -9,6 +9,6 @@ public class Solution {
         String name = "Ruslan";
         System.out.println(name);
 
-        //done
+        //done done
     }
 }
