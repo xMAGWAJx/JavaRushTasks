@@ -21,5 +21,7 @@ public class Solution {
         System.out.print(" равно ");
         //System.out.print("пять");
         System.out.print(a + b);
+
+        // done
     }
 }
