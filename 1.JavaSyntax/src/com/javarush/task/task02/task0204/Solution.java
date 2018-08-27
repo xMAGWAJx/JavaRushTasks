@@ -8,7 +8,8 @@ public class Solution {
         Man man = new Man();
         Woman woman = new Woman();
         man.wife = woman;
-        woman.husband = man;//напишите тут ваш код
+        woman.husband = man;
+        //done
     }
 
     public static class Man {
