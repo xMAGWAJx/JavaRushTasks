@@ -7,5 +7,6 @@ package com.javarush.task.task01.task0106;
 public class Solution {
     public static void main(String[] args) {
         System.out.print("Это не баг, это фича.");
+        //and where is the commit
     }
 }
