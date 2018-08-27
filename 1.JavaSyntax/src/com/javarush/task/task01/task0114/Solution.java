@@ -16,5 +16,7 @@ public class Solution {
       System.out.println("JavaRush. Learn once - use anywhere");//напишите тут ваш код
       System.out.println("JavaRush. Learn once - use anywhere");//напишите тут ваш код
       System.out.println("JavaRush. Learn once - use anywhere");//напишите тут ваш код
+
+      // done
     }
 }
