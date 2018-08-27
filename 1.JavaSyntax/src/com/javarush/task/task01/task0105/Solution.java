@@ -9,5 +9,6 @@ public class Solution {
         String name = "Ruslan";
         int age = 31;
         String city = "Riga";
+        // task done
     }
 }
