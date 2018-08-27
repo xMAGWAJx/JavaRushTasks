@@ -11,6 +11,6 @@ public class Solution {
         int kvadrat = number * number;
         System.out.println(kvadrat);
 
-        //напишите тут ваш код
+        //done
     }
 }
