@@ -9,6 +9,6 @@ public class Solution {
         int a = 1;
         int b = 2;
 
-        //done double done
+        //done double done triple done
     }
 }
