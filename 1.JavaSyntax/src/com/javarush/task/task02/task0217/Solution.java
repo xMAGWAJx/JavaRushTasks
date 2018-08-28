@@ -5,12 +5,13 @@ package com.javarush.task.task02.task0217;
 */
 public class Solution {
     public static int min(int a, int b, int c, int d) {
-        //напишите тут ваш код
+      return min(min(a, b), min(c, d));//напишите тут ваш код
 
     }
 
     public static int min(int a, int b) {
-        //напишите тут ваш код
+      int m = a < b ? a : b;
+      return m;//напишите тут ваш код
 
     }
 
