@@ -10,6 +10,8 @@ public class Solution {
     }
 
     public static double getWeight(int weightEarth) {
-        //напишите тут ваш код
+      double weightMoon = weightEarth * 0.17;
+      return weightMoon;
+
     }
 }
