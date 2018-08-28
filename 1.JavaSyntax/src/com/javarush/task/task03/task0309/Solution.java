@@ -6,6 +6,10 @@ package com.javarush.task.task03.task0309;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+      int summa=0;
+      for(int x=1;x<6;x=x+1){
+        summa=summa+x;
+        System.out.println(summa);
+      }
     }
 }
