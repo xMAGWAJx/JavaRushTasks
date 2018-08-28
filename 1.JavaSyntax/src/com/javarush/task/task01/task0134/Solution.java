@@ -10,6 +10,7 @@ public class Solution {
     }
 
     public static long getVolume(int a, int b, int c) {
-        //напишите тут ваш код
+        long water = a * b * c * 1000;
+      return water;//напишите тут ваш код
     }
 }
