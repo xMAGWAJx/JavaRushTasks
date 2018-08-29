@@ -19,8 +19,5 @@ public class Solution {
       else if (name1.length() == name2.length()) {
         System.out.println("Длины имен равны");
       }
-      /*if ((name1 != name2) && (name1.length() != name2.length())){
-        System.out.println();
-      }*/
     }
 }
