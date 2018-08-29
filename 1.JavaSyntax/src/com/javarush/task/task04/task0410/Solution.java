@@ -12,6 +12,11 @@ public class Solution {
     }
 
     public static void checkInterval(int a) {
-        //напишите тут ваш код
+        if (a <= 100 && a >= 50) {
+          System.out.println("Число " + a + " а содержится в интервале.");
+        }
+        else {
+          System.out.println("Число " + a + " а не содержится в интервале.");
+        }
     }
 }
