@@ -7,10 +7,18 @@ package com.javarush.task.task04.task0432;
 */
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        int number = scanner.nextInt();
 
+        int start = 1;
+        while (start <= number) {
+          System.out.println(text);
+          start++;
+        }
     }
 }
