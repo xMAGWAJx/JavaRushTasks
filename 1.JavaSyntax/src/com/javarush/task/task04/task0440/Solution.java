@@ -6,6 +6,8 @@ package com.javarush.task.task04.task0440;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        for (int a = 0; a < 100; a++) {
+          System.out.println("Я никогда не буду работать за копейки. Амиго");
+        }
     }
 }
