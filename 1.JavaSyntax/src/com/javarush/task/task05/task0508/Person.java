@@ -31,6 +31,9 @@ public class Person {
 
   public void setSex(char sex) {
     this.sex = sex;
+
+    // done
+
   }
 
   public static void main(String[] args) {
