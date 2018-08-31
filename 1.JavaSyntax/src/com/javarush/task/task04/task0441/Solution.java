@@ -14,6 +14,14 @@ public class Solution {
       int b = scanner.nextInt();
       int c = scanner.nextInt();
 
-
+      if (a <= b && b >= c && a >= c || a >= b && b <= c && a <= c || a >= b && b >= c && a <= c) {
+        System.out.println(a);
+      }
+      else if (a >= b && b >= c && a >= c || a <= b && b <= c && a <= c || a <= b && b <= c && a >= c) {
+        System.out.println(b);
+      }
+      else if (a <= b && b >= c && a <= c || c >= b && c <= a && a <= b || c >= b && c <= a && a >= b) {
+        System.out.println(c);
+      }
     }
 }
