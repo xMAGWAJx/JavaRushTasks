@@ -5,7 +5,10 @@ package com.javarush.task.task05.task0506;
 */
 
 public class Person {
-    //напишите тут ваш код
+    String name = "Pepa";
+    int age = 100500;
+    String address = "Narnia";
+    char sex = 'm';
 
     public static void main(String[] args) {
 
