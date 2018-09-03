@@ -9,7 +9,22 @@ public class Circle {
     public double y;
     public double radius;
 
-    //напишите тут ваш код
+
+    public Circle (double x, double y) {
+      this.x = x;
+      this.y = y;
+    }
+    public Circle (double radius) {
+      this.radius = radius;
+    }
+    public Circle (double x, double y, double radius) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+    }
+    public Circle () {
+      radius = 100500;
+    }
 
     public static void main(String[] args) {
 
