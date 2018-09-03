@@ -11,19 +11,12 @@ public class Person {
     int weight;
     double size;
 
-    public void initialize(String name) {
+    public void initialize(String name, int money, char sex, int weight, double size) {
         this.name = name;
-    }
-
-    public void initialize(String name, char sex) {
-        this.name = name;
-        this.sex = sex;
-    }
-
-    public void initialize(String name, int money, char sex) {
-        this.name = name;
-        this.money = money;
-        this.sex = sex;
+      this.sex = sex;
+      this.money = money;
+      this.weight = weight;
+      this.size = size;
     }
 
     public static void main(String[] args) {
