@@ -17,9 +17,9 @@ public class Solution {
         String max = "Max is ";
         int a = Integer.parseInt(reader.readLine());
         int b = Integer.parseInt(reader.readLine());
-        max = a > b ? a : b;
+        int maxInt = a > b ? a : b;
 
-        System.out.println(max + max);
+        System.out.println(max + maxInt);
     }
 
 }
