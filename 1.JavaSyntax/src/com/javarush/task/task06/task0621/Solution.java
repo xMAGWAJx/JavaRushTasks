@@ -9,39 +9,56 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+  public static void main(String[] args) throws IOException {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String motherName = reader.readLine();
-        Cat catMother = new Cat(motherName);
+    String oldfatherName = reader.readLine();
+    Cat catOldfather = new Cat(oldfatherName);
+    String oldmotherName = reader.readLine();
+    Cat catOldmother = new Cat(oldmotherName);
+    String fatherName = reader.readLine();
+    Cat catFather = new Cat(fatherName, null, catOldfather);
+    String motherName = reader.readLine();
+    Cat catMother = new Cat(motherName, catOldmother, null);
+    String sunName = reader.readLine();
+    Cat catSun = new Cat(sunName, catMother, catFather);
+    String daughterName = reader.readLine();
+    Cat catDaughter = new Cat(daughterName, catMother, catFather);
+    System.out.println(catOldfather);
+    System.out.println(catOldmother);
+    System.out.println(catFather);
+    System.out.println(catMother);
+    System.out.println(catSun);
+    System.out.println(catDaughter);
+  }
 
-        String daughterName = reader.readLine();
-        Cat catDaughter = new Cat(daughterName, catMother);
+  public static class Cat {
+    private String name;
+    private Cat f;
+    private Cat m;
 
-        System.out.println(catMother);
-        System.out.println(catDaughter);
+    Cat(String name) {
+      this.name = name;
     }
 
-    public static class Cat {
-        private String name;
-        private Cat parent;
-
-        Cat(String name) {
-            this.name = name;
-        }
-
-        Cat(String name, Cat parent) {
-            this.name = name;
-            this.parent = parent;
-        }
-
-        @Override
-        public String toString() {
-            if (parent == null)
-                return "The cat's name is " + name + ", no mother ";
-            else
-                return "The cat's name is " + name + ", mother is " + parent.name;
-        }
+    Cat(String name, Cat m, Cat f) {
+      this.name = name;
+      this.m = m;
+      this.f = f;
     }
 
+    @Override
+    public String toString() {
+      if (f == null && m == null)
+        return "The cat's name is " + name + ", no mother, no father";
+      else if (m == null)
+        return "The cat's name is " + name + ", no mother, father is " + f.name;
+      else if (f == null)
+        return "The cat's name is " + name + ", mother is " + m.name + ", no father";
+      else
+        return "The cat's name is " + name + ", mother is " + m.name + ", father is " + f.name;
+    }
+  }
 }
+
+
