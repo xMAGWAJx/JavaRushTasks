@@ -9,7 +9,26 @@ import java.io.InputStreamReader;
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+  public static void main(String[] args) throws Exception {
+    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int numbers[] = new int[15];
+    int even = 0;
+    int odd = 0;
+
+    for (int i = 0; i < numbers.length; i++) {
+      numbers[i] = Integer.parseInt(reader.readLine());
+      if (i % 2 == 0) {
+        even = even + numbers[i];
+      }
+      else odd = odd + numbers[i];
     }
+
+    if (even > odd) {
+      System.out.println("В домах с четными номерами проживает больше жителей.");
+    }
+    else {
+      System.out.println("В домах с нечетными номерами проживает больше жителей.");
+    }
+  }
 }
