@@ -12,6 +12,19 @@ import java.util.Collections;
 public class Solution {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
+      ArrayList<String> list = new ArrayList<>();
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+      for (int i = 0; i < 5; i++) {
+        String s = reader.readLine();
+        list.add(s);
+      }
+
+      list.remove(2); // удалид элемент вне цикла
+
+      for (int i = list.size() - 1; i >= 0; i--) {
+        System.out.println(list.get(i));
+      }
     }
 }
 
