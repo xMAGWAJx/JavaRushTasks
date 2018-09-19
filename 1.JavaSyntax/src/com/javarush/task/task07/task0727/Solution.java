@@ -20,14 +20,18 @@ public class Solution {
             list.add(s);
         }
 
-        ArrayList<String> listUpperCase = new ArrayList<String>();
+        ArrayList<String> numbers = new ArrayList<String>();
         for (int i = 0; i < list.size(); i++) {
-            String s = list.get(i);
-            listUpperCase.add(s.toUpperCase());
+          if (list.get(i).length() % 2 == 0) {
+            numbers.add(list.get(i) + " " + list.get(i));
+          }
+          else {
+            numbers.add(list.get(i) + " " + list.get(i) + " " + list.get(i));
+          }
         }
 
-        for (int i = 0; i < listUpperCase.size(); i++) {
-            System.out.println(listUpperCase.get(i));
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.println(numbers.get(i));
         }
     }
 }
