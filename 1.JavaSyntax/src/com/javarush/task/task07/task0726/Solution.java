@@ -20,7 +20,7 @@ public class Solution {
 
             if (name.isEmpty()) break;
 
-            Cat cat = new Cat(name);
+            Cat cat = new Cat(name, Integer.parseInt(reader.readLine()),Integer.parseInt(reader.readLine()),Integer.parseInt(reader.readLine()));
             CATS.add(cat);
         }
 
