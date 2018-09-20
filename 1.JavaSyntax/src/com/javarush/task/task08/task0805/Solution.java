@@ -1,7 +1,9 @@
 package com.javarush.task.task08.task0805;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /* 
 На экране — значения!
@@ -26,5 +28,9 @@ public class Solution {
 
     public static void printValues(Map<String, String> map) {
         //напишите тут ваш код
+      for (Map.Entry<String, String> pair : map.entrySet()) {
+        String value = pair.getValue();
+        System.out.println(value);
+      }
     }
 }
