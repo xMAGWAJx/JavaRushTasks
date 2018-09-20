@@ -17,10 +17,15 @@ public class Solution {
 
     public static long getTimeMsOfInsert(List list) {
         //напишите тут ваш код
+      Date currentTime = new Date();        // Задаётся стартовое время
 
-        insert10000(list);
+      insert10000(list);
 
-        //напишите тут ваш код
+      //напишите тут ваш код
+      Date newTime = new Date();            // после добавления
+
+      long msDelay = newTime.getTime() - currentTime.getTime();
+      return msDelay;
 
     }
 
