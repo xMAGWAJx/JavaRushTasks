@@ -25,10 +25,15 @@ public class Solution {
     public static long getTimeMsOfGet(List list) {
         //напишите тут ваш код
 
+      Date currentTime = new Date();
+
         get10000(list);
 
         //напишите тут ваш код
+      Date newTime = new Date();
 
+      long msDelay = newTime.getTime() - currentTime.getTime();
+      return msDelay;
     }
 
     public static void get10000(List list) {
