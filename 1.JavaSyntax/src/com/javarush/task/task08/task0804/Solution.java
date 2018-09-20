@@ -2,6 +2,7 @@ package com.javarush.task.task08.task0804;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 /* 
 Вывести на экран список ключей
@@ -26,5 +27,9 @@ public class Solution {
 
     public static void printKeys(Map<String, String> map) {
         //напишите тут ваш код
+      Set<String> keySet = map.keySet();
+      for (String key : keySet) {
+        System.out.println(key);
+      }
     }
 }
