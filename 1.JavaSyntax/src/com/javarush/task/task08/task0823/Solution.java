@@ -13,7 +13,7 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
 
-        //напишите тут ваш код
+        //напишите тут ваш код кодд
       String phrase = "";
       for (String ch: s.split(" ")) {
         if (ch.length() > 1) {
