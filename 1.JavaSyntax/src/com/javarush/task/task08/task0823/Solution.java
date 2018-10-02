@@ -14,5 +14,12 @@ public class Solution {
         String s = reader.readLine();
 
         //напишите тут ваш код
+      String phrase = "";
+      for (String ch: s.split(" ")) {
+        if (ch.length() > 1) {
+          phrase += ch.substring(0, 1).toUpperCase() + ch.substring(1) + " ";
+        }
+      }
+      System.out.println(phrase.trim());
     }
 }
