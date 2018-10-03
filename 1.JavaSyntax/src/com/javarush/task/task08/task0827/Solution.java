@@ -1,5 +1,6 @@
 package com.javarush.task.task08.task0827;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /* 
@@ -12,6 +13,10 @@ public class Solution {
     }
 
     public static boolean isDateOdd(String date) {
-        return true;
+      Date date1 = new Date(date);
+      SimpleDateFormat ff = new SimpleDateFormat("D");
+      int x = Integer.parseInt(ff.format(date1));
+
+        return x % 2 != 0;
     }
 }
