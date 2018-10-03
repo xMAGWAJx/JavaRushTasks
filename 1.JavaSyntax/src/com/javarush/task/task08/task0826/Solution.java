@@ -26,5 +26,15 @@ public class Solution {
 
     public static void sort(int[] array) {
         //напишите тут ваш код
+      int temp, z = 0;
+      for (int i = 0; i < array.length; i++, z++) {
+        for (int j = z; j < array.length; j++) {
+          if (array[j] > array[i]) {
+            temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
+          }
+        }
+      }
     }
 }
